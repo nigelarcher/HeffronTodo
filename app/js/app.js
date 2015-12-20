@@ -3,8 +3,9 @@
 // I am planning to move this into the controller file, but just to get this going I am going to use a simple method of defining the controller.
 // I will come back to this once I get the skate working as I expect
 
+var myApp = angular.module('myApp',[]);
 
-function TodoController($scope) {
+myApp.controller('TodoController', ['$scope', function($scope) {
   
   $scope.todos = [
 		{text: 'Build Node Server', done:true},   
@@ -39,7 +40,8 @@ function TodoController($scope) {
 		$scope.todos.push({text:$scope.formTodoText, done:false});
 		$scope.formTodoText = '';
 	};
-}
+}]);
+
 
 // This is more than likely not the correct use of skate, but after 8 hours of searching I have not found a single example
 // of how to use the library online, and therefore I am making a best guess based on the one page usage guide, and hints in the
@@ -84,7 +86,8 @@ skate('todoitem', {
 	events:
 	{
 		'click': function(e){
-				this.complete = !this.complete;
+				
+				this.complete = !(""+this.complete == "true");
 				skate.render(this);
 				skate.emit(this, 'completed', {completed: this.complete} );
 		}

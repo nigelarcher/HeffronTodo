@@ -4,14 +4,12 @@
 
 h2 {
   font-size: 1.5em;
-  font-family: megrim, fantasy;
   margin: 0;
   color: #333;
   text-align: center;
 }
 
 .emphasis {
-  font-family: vast-shadow, sans-serif;
   font-size: 3em;
 }
 
@@ -21,7 +19,6 @@ ul {
 }
 
 li {
-  font-family: megrim, fantasy;
   font-size: 1.2em;
   padding: 10px;
   list-style-type: none;
@@ -45,7 +42,6 @@ li input[type="checkbox"] {
   border: none;
   padding: 40px 0;
   font-size: 2em;
-  font-family: megrim, fantasy;
   text-indent: 55px;
 }
 
@@ -59,7 +55,6 @@ li input[type="checkbox"] {
 .add-btn h2 {
   padding: 0;
   font-size: 4em;
-  font-family: megrim, fantasy;
   color: #333;
 }
 
@@ -68,7 +63,6 @@ li input[type="checkbox"] {
   border: none;
   height: 100px;
   font-size: 2em;
-  font-family: megrim, fantasy;
   color: #aaa;
 }
 

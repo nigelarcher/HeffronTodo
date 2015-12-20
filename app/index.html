@@ -1,10 +1,10 @@
-<html ng-app>
+<html ng-app="myApp">
+	<!-- credit to http://codepen.io/Russbrown/pen/IgBuh for the base app which was pulled down. It is the belief that the main purpose
+	of this technical test was the use of the skatejs framework, and I also generally operation with the principle of "Write the code that only you can write".
+	I have modified the example significantly, but significant portions of the example linked remain -->
+	
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="//use.edgefonts.net/vast-shadow:n4:all.js"></script>
-    <script src="//use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
-	<script src="/lib/requirejs/require.js"></script>
-	<script src="/lib/skatejs/dist/index.js"></script>
+    <script src="/lib/angular/angular.js"></script>
 	<script src="/lib/skatejs/dist/index.js"></script>
 	<script src="/js/app.js"></script>
 	
@@ -15,6 +15,8 @@
   <body>
     <div class="todo-wrapper" ng-controller="TodoController">
       <h2>You've got <span class="emphasis">{{getTotalTodos()}}</span> things to do</h2>
+	  <!-- note: Currently these filters operate on the Angular model, and this model is not updated by the skate components. Therefore
+	  as the state is moved from the initalised value (with the exception of new items) the filtered results begin to behave unexpectly -->
 	  <label>Filter: <input ng-model="searchText"></label>
 	  <label>Show Done: <select ng-model="displayMode"><option value=''>Show All</option><option value="true">only Done</option><option value="false">Only Pending</option></select></label>
 	  <todolist></todolist>
