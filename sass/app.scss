@@ -1,0 +1,97 @@
+// Import Bootstrap styles
+//@import '../bootstrap-sass/assets/stylesheets';
+
+//@import "compass/css3";
+
+body {
+  //background: #13756D;
+}
+
+.todo-wrapper {
+  //background: #55B6AE;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5em;
+  
+  font-family: megrim, fantasy;
+  margin: 0;
+  color: #333;
+  text-align: center;
+ }
+.emphasis {
+  font-family: vast-shadow, sans-serif;
+  font-size: 3em;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  font-family: megrim, fantasy;
+  font-size: 1.2em;
+  padding: 10px;
+  
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+li input[type="checkbox"] {
+  width: 40px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+.add-input {
+  width: 60%;
+  height: 20px;
+  float: left;
+  border: none;
+  padding: 40px 0;
+  font-size: 2em;
+  font-family: megrim, fantasy;
+  text-indent: 55px;
+}
+.add-btn {
+  width: 40%;
+  border: none;
+  
+  padding: 0;
+  height: 100px;
+  h2 {
+   
+   padding: 0;
+   font-size: 4em;
+   font-family: megrim, fantasy;
+   color: #333;
+  }
+}
+
+.clear-btn {
+  width: 100%;
+  border: none;
+  height: 100px;
+  
+  font-size: 2em;
+  font-family: megrim, fantasy;
+  color: #aaa;
+}
+
+.completedIndicator 
+{
+	display: inline-block;
+	width: 50px;
+}
+
+todoitem
+{
+	display: inline-block;
+	width: 100%;
+}

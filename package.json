@@ -1,0 +1,26 @@
+{
+  "name": "heffrontodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nigelarcher@github.com/nigelarcher/HeffronTodo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigelarcher/HeffronTodo/issues"
+  },
+  "homepage": "https://github.com/nigelarcher/HeffronTodo#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2"
+  },
+  "dependencies": {
+    "angular-material": "^1.0.1"
+  }
+}

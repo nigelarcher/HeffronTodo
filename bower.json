@@ -1,0 +1,21 @@
+{
+  "name": "heffrontodo",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/nigelarcher/HeffronTodo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skatejs": "~0.15.0",
+    "angular": "~1.4.8",
+    "jquery": "~2.1.4",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
+  }
+}
